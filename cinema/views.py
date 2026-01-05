@@ -7,7 +7,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework import mixins
 
 from cinema.models import Genre, Actor, CinemaHall, Movie, MovieSession, Order
-from .permissinos import IsAdminOrIfAuthenticatedReadOnly
+from .permissions import IsAdminOrIfAuthenticatedReadOnly
 
 from cinema.serializers import (
     GenreSerializer,
